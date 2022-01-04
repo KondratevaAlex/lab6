@@ -20,7 +20,8 @@ namespace lab6
         }
         public void printrect(Rectangle rect)
         {
-            Console.Write("Длины сторон а и b соответственно: %lf, %lf", dlinaarect, dlinabrect);
+            Console.Write("Длины сторон а и b соответственно: ");
+            Console.Write(dlinaarect + "," + dlinabrect);
         }
         public void rectperimeter(out double perimetrrect)
         {
@@ -33,6 +34,20 @@ namespace lab6
         public void addAnotherInfo(ObjectInfo someinfo)
         {
             another_info = someinfo;
+        }
+        public static Rectangle operator +(Rectangle a, Rectangle b)
+        {
+            Rectangle result = new Rectangle();
+            result.dlinaarect = a.dlinaarect + b.dlinaarect;
+            result.dlinabrect = a.dlinabrect + b.dlinabrect;
+            return result;
+        }
+        public static Rectangle operator ++(Rectangle a)
+        {
+            Rectangle result = new Rectangle();
+            result.dlinaarect = a.dlinaarect++;
+            result.dlinabrect = a.dlinabrect++;
+            return result;
         }
     }
 }

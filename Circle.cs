@@ -17,7 +17,8 @@ namespace lab6
         }
         public void printcirc(Circle circ)
         {
-            Console.Write("Длина радиуса r: %lf", dlinarcirc);
+            Console.WriteLine("Длина радиуса r: ");
+            Console.Write(dlinarcirc);
         }
         public void circperimeter(out double perimetrcirc)
         {

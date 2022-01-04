@@ -23,7 +23,8 @@ namespace lab6
         }
         public void printpar(Parallelogram par)
         {
-            Console.Write("Длины сторон а, b и угол в градусах между ними соответственно: %lf, %lf, %lf", dlinaapar, dlinabpar, ygolalppar);
+            Console.WriteLine("Длины сторон а, b и угол в градусах между ними соответственно: ");
+            Console.Write(dlinaapar + "," + dlinabpar + "," + ygolalppar);
         }
         public void parperimeter(out double perimetrpar)
         {

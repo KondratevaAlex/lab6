@@ -29,7 +29,8 @@ namespace lab6
         }
         public void printtrap(Trapezoid trap)
         {
-            Console.Write("Длина оснований a и b, сторон c и d и высоты h соответственно: %lf, %lf, %lf, %lf, %lf", dlinaatrap, dlinabtrap, dlinactrap, dlinadtrap, dlinahtrap);
+            Console.WriteLine("Длина оснований a и b, сторон c и d и высоты h соответственно: ");
+            Console.Write(dlinaatrap + "," + dlinabtrap + "," + dlinactrap + "," + dlinadtrap + "," + dlinahtrap);
         }
         public void trapperimeter(out double perimetrtrap)
         {

@@ -9,6 +9,40 @@ namespace lab6
         private String name;
         private String patronymic;
         private String surname;
+        public string Name
+        {
+            set
+            {
+                name = Name;
+            }
+            get
+            {
+                return name;
+            }
+        }
+        public string Patronymic
+        {
+            set
+            {
+                patronymic = Patronymic;
+            }
+            get
+            {
+                return patronymic;
+            }
+        }
+        public string Surname
+        {
+            set
+            {
+                surname = Surname;
+            }
+            get
+            {
+                return surname;
+            }
+        }
+
         public Student()
         {
             name = "Unknown";

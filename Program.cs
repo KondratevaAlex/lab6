@@ -10,6 +10,10 @@ namespace lab6
 			double[] anssur = new double[2];
 			double difper, difsur;
 			int choice;
+			Student Student = new Student();
+			Student.set();
+			Student.printInfo();
+			Student.getFIO();
 			do
 			{
 				Console.WriteLine("\nВыберите вид фигур для сравнения:\n1 - Треугольники\n2 - Прямоугольники(квадраты)\n3 - Параллелограммы\n4 - Трапеции\n5 - Круги\n:::");

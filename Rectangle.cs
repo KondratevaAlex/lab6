@@ -22,17 +22,13 @@ namespace lab6
         {
             Console.Write("Длины сторон а и b соответственно: %lf, %lf", dlinaarect, dlinabrect);
         }
-        public double rectperimeter(Rectangle rect)
+        public void rectperimeter(out double perimetrrect)
         {
-            double perimetrrect;
             perimetrrect = (dlinaarect + dlinabrect) * 2;
-            return perimetrrect;
         }
-        public double rectsurf(Rectangle rect)
+        public void rectsurf(ref double surfrect)
         {
-            double surfrect;
             surfrect = dlinaarect * dlinabrect;
-            return surfrect;
         } 
         public void addAnotherInfo(ObjectInfo someinfo)
         {

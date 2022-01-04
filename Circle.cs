@@ -19,17 +19,13 @@ namespace lab6
         {
             Console.Write("Длина радиуса r: %lf", dlinarcirc);
         }
-        public double circperimeter(Circle circ)
+        public void circperimeter(out double perimetrcirc)
         {
-            double perimetrcirc;
             perimetrcirc = 2 * Math.PI * dlinarcirc;
-            return perimetrcirc;
         }
-        public double circsurf(Circle circ)
+        public void circsurf(ref double surfcirc)
         {
-            double surfcirc;
             surfcirc = Math.PI * Math.Pow(dlinarcirc, 2);
-            return surfcirc;
         }
         public void addAnotherInfo(ObjectInfo someinfo)
         {

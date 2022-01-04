@@ -26,21 +26,20 @@ namespace lab6
             Console.WriteLine("Длины сторон а, b и c соответственно: ");
             Console.Write(dlinaatri + "," + dlinabtri + "," + dlinactri);
         }
-        public double triperimeter(Triangle trian)
+        public void triperimeter(out double perimetrtri)
         {
-            double perimetrtri;
             perimetrtri = dlinaatri + dlinabtri + dlinactri;
-            return perimetrtri;
         }
-        public double trisurf(Triangle trian)
+        public void trisurf(ref double surftri)
         {
-            double surftri;
             double perim;
             perim = (dlinaatri + dlinabtri + dlinactri) / 2;
             surftri = Math.Sqrt(perim * (perim - dlinaatri) * (perim - dlinabtri) * (perim - dlinactri));
-            return surftri;
         }
-
+        public void addAnotherInfo(ObjectInfo someinfo)
+        {
+            anotherinfo = someinfo;
+        }
     }
 
 }

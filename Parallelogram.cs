@@ -25,17 +25,13 @@ namespace lab6
         {
             Console.Write("Длины сторон а, b и угол в градусах между ними соответственно: %lf, %lf, %lf", dlinaapar, dlinabpar, ygolalppar);
         }
-        public double parperimeter(Parallelogram par)
+        public void parperimeter(out double perimetrpar)
         {
-            double perimetrpar;
             perimetrpar = (dlinaapar + dlinabpar) * 2;
-            return perimetrpar;
         }
-        public double parsurf(Parallelogram par)
+        public void parsurf(ref double surfpar)
         {
-            double surfpar;
             surfpar = dlinaapar * dlinabpar * ygolalppar;
-            return surfpar;
         }
         public void addAnotherInfo(ObjectInfo someinfo)
         {

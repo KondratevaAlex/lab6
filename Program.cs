@@ -35,8 +35,8 @@ namespace lab6
 								obj[i].setInfo(obj[i]);
 								arr[i].printtri(arr[i]);
 								obj[i].printInfo(obj[i]);
-								ansper[i] = arr[i].triperimeter(arr[i]);
-								anssur[i] = arr[i].trisurf(arr[i]);
+								arr[i].triperimeter(out ansper[i]);
+								arr[i].trisurf(ref anssur[i]);
 							}
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];
@@ -61,8 +61,8 @@ namespace lab6
 								obj[i].setInfo(obj[i]);
 								arr[i].printrect(arr[i]);
 								obj[i].printInfo(obj[i]);
-								ansper[i] = arr[i].rectperimeter(arr[i]);
-								anssur[i] = arr[i].rectsurf(arr[i]);
+								arr[i].rectperimeter(out ansper[i]);
+								arr[i].rectsurf(ref anssur[i]);
 							}
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];
@@ -87,8 +87,8 @@ namespace lab6
 								obj[i].setInfo(obj[i]);
 								arr[i].printpar(arr[i]);
 								obj[i].printInfo(obj[i]);
-								ansper[i] = arr[i].parperimeter(arr[i]);
-								anssur[i] = arr[i].parsurf(arr[i]);
+								arr[i].parperimeter(out ansper[i]);
+								arr[i].parsurf(ref anssur[i]);
 							}
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];
@@ -113,8 +113,8 @@ namespace lab6
 								obj[i].setInfo(obj[i]);
 								arr[i].printtrap(arr[i]);
 								obj[i].printInfo(obj[i]);
-								ansper[i] = arr[i].trapperimeter(arr[i]);
-								anssur[i] = arr[i].trapsurf(arr[i]);
+								arr[i].trapperimeter(out ansper[i]);
+								arr[i].trapsurf(ref anssur[i]);
 							}
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];
@@ -128,6 +128,7 @@ namespace lab6
 						{
 							Circle [] arr = new Circle[2];
 							arr[0] = new Circle();
+
 							arr[1] = new Circle();
 							ObjectInfo [] obj = new ObjectInfo[2];
 							obj[0] = new ObjectInfo();
@@ -139,8 +140,8 @@ namespace lab6
 								obj[i].setInfo(obj[i]);
 								arr[i].printcirc(arr[i]);
 								obj[i].printInfo(obj[i]);
-								ansper[i] = arr[i].circperimeter(arr[i]);
-								anssur[i] = arr[i].circsurf(arr[i]);
+								arr[i].circperimeter(out ansper[i]);
+								arr[i].circsurf(ref anssur[i]);
 							}
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];

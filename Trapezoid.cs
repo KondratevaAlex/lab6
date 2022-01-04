@@ -31,17 +31,13 @@ namespace lab6
         {
             Console.Write("Длина оснований a и b, сторон c и d и высоты h соответственно: %lf, %lf, %lf, %lf, %lf", dlinaatrap, dlinabtrap, dlinactrap, dlinadtrap, dlinahtrap);
         }
-        public double trapperimeter(Trapezoid trap)
+        public void trapperimeter(out double perimetrtrap)
         {
-            double perimetrtrap;
             perimetrtrap = dlinaatrap + dlinabtrap + dlinactrap + dlinadtrap;
-            return perimetrtrap;
         }
-        public double trapsurf(Trapezoid trap)
+        public void trapsurf(ref double surftrap)
         {
-            double surftrap;
             surftrap = ((dlinaatrap * dlinabtrap) / 2) * dlinahtrap;
-            return surftrap;
         }
         public void addAnotherInfo(ObjectInfo someinfo)
         {

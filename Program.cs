@@ -10,15 +10,14 @@ namespace lab6
 			double[] anssur = new double[2];
 			double difper, difsur;
 			int choice;
-			Student student1 = new Student();
-			student1.set();
-			student1.printInfo();
-			student1.getFIO();
+			Student Student1 = new Student();//вызов конструктора без параметров
+			Student1.printInfo();
 
-			Student student2 = new Student();
-			student2.set();
-			student2.printInfo();
-			student2.getFIO();
+			Student Student2 = new Student("Ivanov");//вызов конструктора с одним параметром
+			Student2.printInfo();
+
+			Student student3 = new Student("Ivan", "Ivanovich", "Popov", 21);//вызов конструктора со всеми параметрами
+			student3.printInfo();
 
 			int counter = Student.getCount();
 			Console.WriteLine("Количество студентов: " + counter);

@@ -10,6 +10,30 @@ namespace lab6
         private String patronymic;
         private String surname;
         private static int count = 0;
+
+        public Student()
+        {
+            name = "None";
+            patronymic = "None";
+            surname = "None";
+            count++;
+        }
+
+        public Student(String name)
+        {
+            this.name = name;
+            patronymic = "None";
+            surname = "None";
+            count++;
+        }
+
+        public Student(String name, String patronymic, String surname, int age)
+        {
+            this.name = name;
+            this.patronymic = patronymic;
+            this.surname = surname;
+            count++;
+        }
         public string Name
         {
             set
@@ -44,20 +68,6 @@ namespace lab6
             }
         }
 
-        public Student()
-        {
-            name = "Unknown";
-            patronymic = "Unknown";
-            surname = "Unknown";
-            count++;
-        }
-        public Student(String name, String patronymic, String surname)
-        {
-            this.name = name;
-            this.patronymic = patronymic;
-            this.surname = surname;
-            count++;
-        }
         public void set()
         {
             Console.Write("Введите имя: ");

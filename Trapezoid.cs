@@ -13,6 +13,25 @@ namespace lab6
         private double dlinahtrap;
         private ObjectInfo another_info;
 
+        public Trapezoid()
+        {
+            dlinaatrap = dlinabtrap = dlinactrap = dlinadtrap = dlinahtrap = 0.0;
+        }
+
+        public Trapezoid(double noll)
+        {
+            dlinaatrap = dlinabtrap = dlinactrap = dlinadtrap = dlinahtrap = noll;
+        }
+
+        public Trapezoid(double dlinaatrap, double dlinabtrap, double dlinactrap, double dlinadtrap, double dlinahtrap)
+        {
+            this.dlinaatrap = dlinaatrap;
+            this.dlinabtrap = dlinabtrap;
+            this.dlinactrap = dlinactrap;
+            this.dlinadtrap = dlinadtrap;
+            this.dlinahtrap = dlinahtrap;
+        }
+
         public Trapezoid settrap(Trapezoid trap)
         {
             Console.WriteLine("Длина стороны а: ");

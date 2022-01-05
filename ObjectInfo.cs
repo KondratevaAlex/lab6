@@ -15,12 +15,18 @@ namespace lab6
         {
             colour = day = month = year = 0;
         }
+
         public ObjectInfo(int colour, int day, int month, int year)
         {
             this.colour = colour;
             this.day = day;
             this.month = month;
             this.year = year;
+        }
+
+        public ObjectInfo(int noll)
+        {
+            colour = day = month = year = noll;
         }
         public ObjectInfo setInfo(ObjectInfo obj)
         {

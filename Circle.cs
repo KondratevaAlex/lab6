@@ -9,6 +9,14 @@ namespace lab6
         private double dlinarcirc;
         private ObjectInfo another_info;
 
+        public Circle()
+        {
+            dlinarcirc = 0.0;
+        }
+        public Circle(double noll)
+        {
+            dlinarcirc = noll;
+        }
         public Circle setcirc(Circle circ)
         {
             Console.Write("Длина радиуса r: ");

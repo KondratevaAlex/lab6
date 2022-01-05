@@ -11,6 +11,20 @@ namespace lab6
         private double dlinactri;
         private ObjectInfo anotherinfo;
 
+        public Triangle()
+        {
+            dlinaatri = dlinabtri = dlinactri = 0.0;
+        }
+        public Triangle(double noll)
+        {
+            dlinaatri = dlinabtri = dlinactri = noll;
+        }
+        public Triangle(double dlinaatri, double dlinabtri, double dlinactri)
+        {
+            this.dlinaatri = dlinaatri;
+            this.dlinabtri = dlinabtri;
+            this.dlinactri = dlinactri;
+        }
         public Triangle settri(Triangle tri)
         {
             Console.WriteLine("Длина стороны а: ");

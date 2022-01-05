@@ -21,6 +21,15 @@ namespace lab6
 
 			int counter = Student.getCount();
 			Console.WriteLine("Количество студентов: " + counter);
+
+			Triangle[] arrtri = new Triangle[2];
+			arrtri[0] = new Triangle(1);
+			arrtri[1] = new Triangle(2);
+			arrtri[2] = new Triangle(3);
+
+			for (int i = 0; i < 3; i++)
+				arrtri[i].printtri(arrtri[i]);
+
 			do
 			{
 				Console.WriteLine("\nВыберите вид фигур для сравнения:\n1 - Треугольники\n2 - Прямоугольники(квадраты)\n3 - Параллелограммы\n4 - Трапеции\n5 - Круги\n:::");

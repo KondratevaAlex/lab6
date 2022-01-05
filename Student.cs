@@ -9,6 +9,7 @@ namespace lab6
         private String name;
         private String patronymic;
         private String surname;
+        private static int count = 0;
         public string Name
         {
             set
@@ -48,12 +49,14 @@ namespace lab6
             name = "Unknown";
             patronymic = "Unknown";
             surname = "Unknown";
+            count++;
         }
         public Student(String name, String patronymic, String surname)
         {
             this.name = name;
             this.patronymic = patronymic;
             this.surname = surname;
+            count++;
         }
         public void set()
         {
@@ -78,6 +81,10 @@ namespace lab6
             fio[2] = name[0];
 
             Console.WriteLine("ФИО: " + fio[0] + fio[1] + fio[2]);
+        }
+        public static int getCount()
+        {
+            return count;
         }
     }
 }

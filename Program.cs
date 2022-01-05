@@ -10,10 +10,18 @@ namespace lab6
 			double[] anssur = new double[2];
 			double difper, difsur;
 			int choice;
-			Student Student = new Student();
-			Student.set();
-			Student.printInfo();
-			Student.getFIO();
+			Student student1 = new Student();
+			student1.set();
+			student1.printInfo();
+			student1.getFIO();
+
+			Student student2 = new Student();
+			student2.set();
+			student2.printInfo();
+			student2.getFIO();
+
+			int counter = Student.getCount();
+			Console.WriteLine("Количество студентов: " + counter);
 			do
 			{
 				Console.WriteLine("\nВыберите вид фигур для сравнения:\n1 - Треугольники\n2 - Прямоугольники(квадраты)\n3 - Параллелограммы\n4 - Трапеции\n5 - Круги\n:::");
@@ -64,6 +72,13 @@ namespace lab6
 								arr[i].rectperimeter(out ansper[i]);
 								arr[i].rectsurf(ref anssur[i]);
 							}
+							Rectangle Plus = arr[0] + arr[1];
+							Console.Write("\nУнарный плюс: Plus = M + K : ");
+							Plus.printrect(Plus);
+
+							Plus = arr[0]++;
+							Console.WriteLine("\nИнкремент: Plus = ++M : ");
+							Plus.printrect(Plus);
 							difper = ansper[0] / ansper[1];
 							difsur = anssur[0] / anssur[1];
 							Console.Write("\n\nОтношение периметров прямоугольников друг к другу: ");

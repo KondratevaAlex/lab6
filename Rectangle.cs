@@ -28,9 +28,31 @@ namespace lab6
         public Rectangle setrect(Rectangle rect)
         {
             Console.WriteLine("Длина стороны а: ");
-            dlinaarect = Convert.ToDouble(Console.ReadLine());
+            try
+            {
+                dlinaarect = Convert.ToDouble(Console.ReadLine());
+                if (dlinaarect < 0)
+                {
+                    throw new Exception("Некорректный ввод");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Исключение: {ex.Message}");
+            }
             Console.WriteLine("Длина стороны b: ");
-            dlinabrect = Convert.ToDouble(Console.ReadLine());
+            try
+            {
+                dlinabrect = Convert.ToDouble(Console.ReadLine());
+                if (dlinabrect < 0)
+                {
+                    throw new Exception("Некорректный ввод");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Исключение: {ex.Message}");
+            }
             return rect;
         }
         public void printrect(Rectangle rect)

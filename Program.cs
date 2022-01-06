@@ -22,13 +22,43 @@ namespace lab6
 			int counter = Student.getCount();
 			Console.WriteLine("Количество студентов: " + counter);
 
-			Triangle[] arrtri = new Triangle[2];
+			Triangle[] arrtri = new Triangle[3];
 			arrtri[0] = new Triangle(1);
 			arrtri[1] = new Triangle(2);
 			arrtri[2] = new Triangle(3);
 
 			for (int i = 0; i < 3; i++)
 				arrtri[i].printtri(arrtri[i]);
+
+			Rectangle[] Array = new Rectangle[3];
+			Console.WriteLine("\nВведите координаты 5 точек: ");
+			for (int i = 0; i < 3; i++)
+			{
+				Array[i] = new Rectangle();
+				Array[i].setrect(Array[i]);
+			}
+			Console.WriteLine("Одномерный массив точек: ");
+			for (int i = 0; i < 3; i++)
+			{
+				Array[i].printrect(Array[i]);
+			}
+
+			Rectangle[,] newArray = new Rectangle[2, 2];
+			for (int i = 0; i < 2; i++)
+			{
+				for (int j = 0; j < 2; j++)
+				{
+					newArray[i, j] = new Rectangle();
+					newArray[i, j].setrect(newArray[i, j]);
+				}
+			}
+			Console.WriteLine("Двумерный массив точек\n");
+			for (int i = 0; i < 3; i++)
+			{
+				for (int j = 0; j < 2; j++)
+					newArray[i, j].printrect(newArray[i, j]);
+				Console.WriteLine("\n");
+			}
 
 			do
 			{

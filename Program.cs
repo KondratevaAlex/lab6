@@ -11,11 +11,6 @@ namespace lab6
 			double difper, difsur;
 			int choice;
 
-			Teacher teacher = new Teacher("Victor", "Sergeevich", "Troitsky", 18);
-			Student student = new Student("Victor", "Vladimirovich", "Babarykin");
-			teacher.setAnotherInformation();
-			student.setAnotherInformation(); 
-			Console.WriteLine(teacher);
 			//teacher.estimate();
 
 			//Student Student1 = new Student();//вызов конструктора без параметров
@@ -38,14 +33,13 @@ namespace lab6
 			//for (int i = 0; i < 3; i++)
 			//	arrtri[i].printtri(arrtri[i]);
 
-			teacher.getAnotherInformation();
-			Console.WriteLine(student);
-			student.getAnotherInformation();
-			string studentReview, teacherReview;
-			studentReview = student.WriteReview();
-			teacherReview = teacher.WriteReview();
-			Console.WriteLine("Отзыв преподавателя: " + teacherReview);
-			Console.WriteLine("Отзыв студента: " + studentReview);
+			Student student1 = new Student("Victor", "Vladimirovich", "Babarykin");
+			Student student2 = new Student("Vladimir", "Vladimirovich", "Popov");
+			Teacher teacher1 = new Teacher("Victor", "Sergeevich", "Troitsky", 18, student1);
+			Teacher teacher2 = new Teacher("Ivan", "ivanovich", "Ivanov", 20, student2);
+			teacher1 = (Teacher)teacher2.Clone();
+			Console.WriteLine("1)" + teacher1);
+			Console.WriteLine("2)" + teacher2);
 
 			Rectangle[] Array = new Rectangle[3];
 			Console.WriteLine("\nВведите координаты 5 точек: ");

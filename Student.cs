@@ -4,7 +4,7 @@ using System.Text;
 
 namespace lab6
 {
-    class Student : People, WReview
+    class Student : People, WReview, ICloneable
     {
         private static int count = 0;
         private string group;
@@ -117,6 +117,10 @@ namespace lab6
             Console.Write("Комментраий студента: ");
             review = Console.ReadLine();
             return review;
+        }
+        public object Clone()
+        {
+            return new Student(name, patronymic, surname);
         }
     }
 }

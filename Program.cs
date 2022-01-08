@@ -30,6 +30,11 @@ namespace lab6
 			for (int i = 0; i < 3; i++)
 				arrtri[i].printtri(arrtri[i]);
 
+			Teacher teacher = new Teacher();
+			teacher.set();
+			teacher.printInfo();
+			teacher.estimate();
+
 			Rectangle[] Array = new Rectangle[3];
 			Console.WriteLine("\nВведите координаты 5 точек: ");
 			for (int i = 0; i < 3; i++)

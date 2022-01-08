@@ -4,11 +4,8 @@ using System.Text;
 
 namespace lab6
 {
-    class Student : People
+    class Student : People, WReview
     {
-        protected String name;
-        protected String patronymic;
-        protected String surname;
         private static int count = 0;
         private string group;
 
@@ -113,6 +110,13 @@ namespace lab6
         public override void getAnotherInformation()
         {
             Console.WriteLine("Группа: " + group);
+        }
+        public string WriteReview()
+        {
+            string review;
+            Console.Write("Комментраий студента: ");
+            review = Console.ReadLine();
+            return review;
         }
     }
 }

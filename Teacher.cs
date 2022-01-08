@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace lab6
 {
-    class Teacher : Student
+    class Teacher : Student, WReview
     {
         protected int mark;
         protected int experience;
@@ -39,6 +40,15 @@ namespace lab6
         public override void getAnotherInformation()
         {
             Console.WriteLine("Ученая степень: " + AcademicDegree);
+        }
+        public string WriteReview()
+        {
+            Console.Write("Оценка преподавателя: ");
+            this.mark = Convert.ToInt32(Console.ReadLine());
+            string review;
+            Console.Write("Отзыв преподавателя: ");
+            review = Console.ReadLine();
+            return review;
         }
     }
 }

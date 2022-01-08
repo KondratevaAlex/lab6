@@ -12,7 +12,7 @@ namespace lab6
 			int choice;
 
 			Teacher teacher = new Teacher();
-			teacher.set();
+			teacher.set("Victor", "Sergeevich", "Troitsky", 18);
 			teacher.printInfo();
 			teacher.estimate();
 

@@ -81,7 +81,7 @@ namespace lab6
         public void printInfo()
         {
             String info = name + " " + patronymic + " " + surname;
-            Console.WriteLine("Студент: " + info);
+            Console.WriteLine(info);
         }
         public void getFIO()
         {
@@ -95,6 +95,12 @@ namespace lab6
         public static int getCount()
         {
             return count;
+        }
+        public void set(string name, string patronymic, string surname)
+        {
+            this.name = name;
+            this.patronymic = patronymic;
+            this.surname = surname;
         }
     }
 }

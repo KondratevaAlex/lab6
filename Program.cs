@@ -12,17 +12,17 @@ namespace lab6
 			int choice;
 
 			Teacher teacher = new Teacher("Victor", "Sergeevich", "Troitsky", 18);
-			teacher.printInfo();
+			Console.WriteLine(teacher);
 			teacher.estimate();
 
 			Student Student1 = new Student();//вызов конструктора без параметров
-			Student1.printInfo();
+			Console.WriteLine(Student1);
 
 			Student Student2 = new Student("Ivanov");//вызов конструктора с одним параметром
-			Student2.printInfo();
+			Console.WriteLine(Student2);
 
-			Student student3 = new Student("Ivan", "Ivanovich", "Popov");//вызов конструктора со всеми параметрами
-			student3.printInfo();
+			Student Student3 = new Student("Ivan", "Ivanovich", "Popov");//вызов конструктора со всеми параметрами
+			Console.WriteLine(Student3);
 
 			int counter = Student.getCount();
 			Console.WriteLine("Количество студентов: " + counter);

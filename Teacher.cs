@@ -23,5 +23,11 @@ namespace lab6
             base.set(name, patronymic, surname);
             this.experience = experience;
         }
+        public override string ToString() 
+        {
+            string s = "";
+            s += name + " " + patronymic + " " + surname + ", " + "стаж в годах: " + Convert.ToString(experience);
+            return s;
+        }
     }
 }

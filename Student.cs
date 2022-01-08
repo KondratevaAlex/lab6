@@ -78,10 +78,11 @@ namespace lab6
             surname = Console.ReadLine();
         }
 
-        public void printInfo()
+        public override string ToString()
         {
-            String info = name + " " + patronymic + " " + surname;
-            Console.WriteLine(info);
+            string s = "";
+            s += name + " " + patronymic + " " + surname + ", " + Convert.ToString(age) + " лет";
+            return s;
         }
         public void getFIO()
         {

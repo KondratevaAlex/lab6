@@ -11,29 +11,36 @@ namespace lab6
 			double difper, difsur;
 			int choice;
 
-			Teacher teacher = new Teacher("Victor", "Sergeevich", "Troitsky", 18);
+			Teacher teacher = new Teacher("Victor", "Sergeevich", "Troitsky", 35, 18);
+			Student student = new Student("Victor", "Vladimirovich", "Babarykin", 18);
+			teacher.setAnotherInformation();
+			student.setAnotherInformation(); 
 			Console.WriteLine(teacher);
-			teacher.estimate();
+			//teacher.estimate();
 
-			Student Student1 = new Student();//вызов конструктора без параметров
-			Console.WriteLine(Student1);
+			//Student Student1 = new Student();//вызов конструктора без параметров
+			//Console.WriteLine(Student1);
 
-			Student Student2 = new Student("Ivanov");//вызов конструктора с одним параметром
-			Console.WriteLine(Student2);
+			//Student Student2 = new Student("Ivanov");//вызов конструктора с одним параметром
+			//Console.WriteLine(Student2);
 
-			Student Student3 = new Student("Ivan", "Ivanovich", "Popov");//вызов конструктора со всеми параметрами
-			Console.WriteLine(Student3);
+			//Student Student3 = new Student("Ivan", "Ivanovich", "Popov");//вызов конструктора со всеми параметрами
+			//Console.WriteLine(Student3);
 
-			int counter = Student.getCount();
-			Console.WriteLine("Количество студентов: " + counter);
+			//int counter = Student.getCount();
+			//Console.WriteLine("Количество студентов: " + counter);
 
-			Triangle[] arrtri = new Triangle[3];
-			arrtri[0] = new Triangle(1);
-			arrtri[1] = new Triangle(2);
-			arrtri[2] = new Triangle(3);
+			//Triangle[] arrtri = new Triangle[3];
+			//arrtri[0] = new Triangle(1);
+			//arrtri[1] = new Triangle(2);
+			//arrtri[2] = new Triangle(3);
 
-			for (int i = 0; i < 3; i++)
-				arrtri[i].printtri(arrtri[i]);
+			//for (int i = 0; i < 3; i++)
+			//	arrtri[i].printtri(arrtri[i]);
+
+			teacher.getAnotherInformation();
+			Console.WriteLine(student);
+			student.getAnotherInformation();
 
 			Rectangle[] Array = new Rectangle[3];
 			Console.WriteLine("\nВведите координаты 5 точек: ");

@@ -4,12 +4,13 @@ using System.Text;
 
 namespace lab6
 {
-    class Student
+    class Student : People
     {
         protected String name;
         protected String patronymic;
         protected String surname;
         private static int count = 0;
+        private string group;
 
         public Student()
         {
@@ -81,7 +82,7 @@ namespace lab6
         public override string ToString()
         {
             string s = "";
-            s += name + " " + patronymic + " " + surname + ", " + Convert.ToString(age) + " лет";
+            s += name + " " + patronymic + " " + surname;
             return s;
         }
         public void getFIO()
@@ -102,6 +103,16 @@ namespace lab6
             this.name = name;
             this.patronymic = patronymic;
             this.surname = surname;
+        }
+        public override void setAnotherInformation()
+        {
+            Console.Write("Группа студента: ");
+            group = Console.ReadLine();
+        }
+
+        public override void getAnotherInformation()
+        {
+            Console.WriteLine("Группа: " + group);
         }
     }
 }

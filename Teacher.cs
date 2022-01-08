@@ -8,6 +8,7 @@ namespace lab6
     {
         protected int mark;
         protected int experience;
+        protected string AcademicDegree;
         public Teacher(String name, String patronymic, String surname, int experience) : base(name, patronymic, surname)
         {
             this.experience = experience;
@@ -28,6 +29,16 @@ namespace lab6
             string s = "";
             s += name + " " + patronymic + " " + surname + ", " + "стаж в годах: " + Convert.ToString(experience);
             return s;
+        }
+        public override void setAnotherInformation()
+        {
+            Console.Write("Ученая степень преподавателя: ");
+            AcademicDegree = Console.ReadLine();
+        }
+
+        public override void getAnotherInformation()
+        {
+            Console.WriteLine("Ученая степень: " + AcademicDegree);
         }
     }
 }

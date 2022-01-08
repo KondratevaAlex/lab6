@@ -11,7 +11,7 @@ namespace lab6
         {
             Console.Write("\nОценка за работу: ");
             mark = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("\nОценка за работу: " + mark);
+            Console.WriteLine(name + " " + patronymic + " " + surname + "." + "Оценка за работу: " + mark);
         }
     }
 }

@@ -6,9 +6,9 @@ namespace lab6
 {
     class Student
     {
-        private String name;
-        private String patronymic;
-        private String surname;
+        protected String name;
+        protected String patronymic;
+        protected String surname;
         private static int count = 0;
 
         public Student()

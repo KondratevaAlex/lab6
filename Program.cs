@@ -10,6 +10,12 @@ namespace lab6
 			double[] anssur = new double[2];
 			double difper, difsur;
 			int choice;
+
+			Teacher teacher = new Teacher();
+			teacher.set();
+			teacher.printInfo();
+			teacher.estimate();
+
 			Student Student1 = new Student();//вызов конструктора без параметров
 			Student1.printInfo();
 
@@ -29,11 +35,6 @@ namespace lab6
 
 			for (int i = 0; i < 3; i++)
 				arrtri[i].printtri(arrtri[i]);
-
-			Teacher teacher = new Teacher();
-			teacher.set();
-			teacher.printInfo();
-			teacher.estimate();
 
 			Rectangle[] Array = new Rectangle[3];
 			Console.WriteLine("\nВведите координаты 5 точек: ");

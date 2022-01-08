@@ -8,6 +8,10 @@ namespace lab6
     {
         protected int mark;
         protected int experience;
+        public Teacher(String name, String patronymic, String surname, int experience) : base(name, patronymic, surname)
+        {
+            this.experience = experience;
+        }
         public void estimate()
         {
             Console.Write("\nОценка за работу: ");
@@ -16,7 +20,7 @@ namespace lab6
         }
         public void set(string name, string patronymic, string surname, int experience)
         {
-            set(name, patronymic, surname);
+            base.set(name, patronymic, surname);
             this.experience = experience;
         }
     }

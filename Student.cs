@@ -27,7 +27,7 @@ namespace lab6
             count++;
         }
 
-        public Student(String name, String patronymic, String surname, int age)
+        public Student(String name, String patronymic, String surname)
         {
             this.name = name;
             this.patronymic = patronymic;

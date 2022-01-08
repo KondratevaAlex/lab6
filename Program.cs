@@ -11,8 +11,7 @@ namespace lab6
 			double difper, difsur;
 			int choice;
 
-			Teacher teacher = new Teacher();
-			teacher.set("Victor", "Sergeevich", "Troitsky", 18);
+			Teacher teacher = new Teacher("Victor", "Sergeevich", "Troitsky", 18);
 			teacher.printInfo();
 			teacher.estimate();
 
@@ -22,7 +21,7 @@ namespace lab6
 			Student Student2 = new Student("Ivanov");//вызов конструктора с одним параметром
 			Student2.printInfo();
 
-			Student student3 = new Student("Ivan", "Ivanovich", "Popov", 21);//вызов конструктора со всеми параметрами
+			Student student3 = new Student("Ivan", "Ivanovich", "Popov");//вызов конструктора со всеми параметрами
 			student3.printInfo();
 
 			int counter = Student.getCount();
